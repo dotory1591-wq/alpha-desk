@@ -10,7 +10,7 @@ import pytz
 
 # ---------------------------------------------------------
 # 🔑 API KEY
-API_KEY = "AIzaSyAkI0l4pks4tGx9PkTARgb7VSw-6er_vAo"
+API_KEY = ""
 
 try:
     API_KEY = st.secrets.get("GEMINI_API_KEY", API_KEY)
