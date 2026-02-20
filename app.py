@@ -152,7 +152,7 @@ def get_official_news(ticker):
     except:
         return []
 
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=43200)
 def get_deep_analysis(ticker, change_rate, news_list):
     if not news_list:
         return "⚠️ 글로벌 증시 관련 뉴스가 없습니다. 기술적 분석을 참고하세요."
