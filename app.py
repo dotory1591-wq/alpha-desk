@@ -159,7 +159,7 @@ def get_deep_analysis(ticker, change_rate, news_list):
 
     try:
         news_txt = "\n".join([f"- {title}" for title in news_list])
-        model = genai.GenerativeModel('gemini-2.0-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         prompt = f"""
         Role: Wall Street Expert. Target: {ticker} ETF. Today's Move: {change_rate}.
