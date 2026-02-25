@@ -49,7 +49,7 @@ def get_korean_date():
     weekdays = ["월", "화", "수", "목", "금", "토", "일"]
     return f"{kr_time.year}년 {kr_time.month}월 {kr_time.day}일 {weekdays[kr_time.weekday()]}요일"
 
-@st.cache_data(ttl=1800)
+@st.cache_data(ttl=43200)
 def get_weather_forecast():
     try:
         url = "https://api.open-meteo.com/v1/forecast?latitude=37.56&longitude=127.36&hourly=temperature_2m,weather_code&timezone=Asia%2FSeoul&forecast_days=1"
